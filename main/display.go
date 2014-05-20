@@ -4,7 +4,7 @@ import (
 	"flag"
 
 	"code.google.com/p/certificate-transparency.schwag"
-	"code.google.com/p/certificate-transparency/src/go/client"
+	"code.google.com/p/certificate-transparency/go/client"
 )
 
 var logUri = flag.String("log_uri", "http://ct.googleapis.com/pilot", "CT Log base URI")
