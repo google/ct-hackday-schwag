@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 
-	"code.google.com/p/certificate-transparency.schwag"
-	"code.google.com/p/certificate-transparency/go/client"
+	"github.com/google/certificate-transparency/go/client"
+	"github.com/google/ct-hackday-schwag"
 )
 
 var logUri = flag.String("log_uri", "http://ct.googleapis.com/pilot", "CT Log base URI")

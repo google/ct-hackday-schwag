@@ -13,7 +13,7 @@ import (
 	"log"
 	"time"
 
-	"code.google.com/p/certificate-transparency/go/client"
+	"github.com/google/certificate-transparency/go/client"
 	"github.com/tarm/goserial"
 )
 
