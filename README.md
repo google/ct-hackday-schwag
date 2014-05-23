@@ -13,12 +13,12 @@ You'll need go v1.1 or higher to compile.
 
 Import into your Go workspace like this:
 
-    go get code.google.com/p/certificate-transparency.schwag
+    go get github.com/google/ct-hackday-schwag
 
 To compile it, run the following command from the top of your Go
 workspace:
 
-    go build src/code.google.com/p/certificate-transparency.schwag/main/display.go
+    go build src/github.com/google/ct-hackday-schwag/main/display.go
 
 ## Contributing
 
