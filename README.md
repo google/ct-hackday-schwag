@@ -3,6 +3,8 @@
 This is a driver for an LCD log driver that was given at the May 7th,
 2014 Certificate Transparency hack day.
 
+Silly change.
+
 You'll need go v1.1 or higher to compile.
 
 ## Website
