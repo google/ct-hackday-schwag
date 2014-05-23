@@ -142,7 +142,7 @@ func (l *LCDDisplay) displayUpdater(newSTHs <-chan *client.SignedTreeHead) {
 			red = uint8(0xff * (ageSecs - l.config.FreshAge) / (l.config.StaleAge - l.config.FreshAge))
 			green = 0xff - red
 		}
-		l.serial.Write([]byte(fmt.Sprintf("%s%s%5s %4dm old", cmdHome, Colour(red, green, 0), l.config.Name[:6], ageSecs/60)))
+		l.serial.Write([]byte(fmt.Sprintf("%s%s%6.6s %4dm old", cmdHome, Colour(red, green, 0), l.config.Name, ageSecs/60)))
 		l.serial.Write([]byte(fmt.Sprintf("Certs: %9d", l.numCerts)))
 	}
 }
