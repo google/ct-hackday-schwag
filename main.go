@@ -4,7 +4,7 @@ import (
 	"flag"
 
 	"github.com/google/certificate-transparency/go/client"
-	"github.com/google/ct-hackday-schwag"
+	"github.com/google/ct-hackday-schwag/internal"
 )
 
 var logUri = flag.String("log_uri", "http://ct.googleapis.com/pilot", "CT Log base URI")
@@ -18,7 +18,7 @@ var staleAge = flag.Int("stale_age", 90*60, "STH age in seconds after which the 
 func main() {
 	flag.Parse()
 	logClient := client.New(*logUri)
-	displayConfig := schwag.DisplayConfig{
+	displayConfig := internal.DisplayConfig{
 		Client:    logClient,
 		Name:      *logName,
 		Port:      *serialDevice,
@@ -27,7 +27,7 @@ func main() {
 		StaleAge:  *staleAge,
 		FetchSecs: *fetchSecs,
 	}
-	display, err := schwag.NewLCDDisplay(displayConfig)
+	display, err := internal.NewLCDDisplay(displayConfig)
 	if err != nil {
 		panic(err.Error())
 	}

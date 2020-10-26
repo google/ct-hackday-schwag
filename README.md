@@ -15,10 +15,7 @@ Import into your Go workspace like this:
 
     go get github.com/google/ct-hackday-schwag
 
-To compile it, run the following command from the top of your Go
-workspace:
-
-    go build src/github.com/google/ct-hackday-schwag/main/display.go
+This will download, build, and install the binary.
 
 ## Contributing
 

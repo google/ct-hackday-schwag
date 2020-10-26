@@ -4,7 +4,7 @@
 // This package can be used to drive any serially connected LCD which is
 // compatible with the Matrix Orbital command set, although currently
 // the code assumes an 16x2 LCD.
-package schwag
+package internal
 
 import (
 	"flag"
